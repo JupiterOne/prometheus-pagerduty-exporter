@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: webdevops/pagerduty-exporter
+  repository: jupiterone/pagerduty-exporter
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
@@ -25,10 +25,12 @@ serviceAccount:
 
 podAnnotations: {}
 
-podSecurityContext: {}
+podSecurityContext:
+  {}
   # fsGroup: 2000
 
-securityContext: {}
+securityContext:
+  {}
   # capabilities:
   #   drop:
   #   - ALL
@@ -42,7 +44,8 @@ service:
   targetPort: 8080
   name: http
 
-resources: {}
+resources:
+  {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
@@ -90,7 +93,9 @@ config:
   # Scrape time
   scrapeTime: "5m"
   # Scrape time incidents and oncalls
-  scrapeTimeLive: "1m" 
+  scrapeTimeLive: "1m"
+  # PagerDuty statuses to sync
+  incidentStatus: all
 
 serviceMonitor:
   # When set true then use a ServiceMonitor to configure scraping

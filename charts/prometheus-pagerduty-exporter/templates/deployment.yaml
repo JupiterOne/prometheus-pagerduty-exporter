@@ -70,6 +70,9 @@ spec:
           {{- if .Values.config.scrapeTimeLive }}
           - "--scrape.time.live={{ .Values.config.scrapeTimeLive }}"
           {{- end }}
+          {{- if .Values.config.incidentStatus }}
+          - "--pagerduty.incident.status={{ .Values.config.incidentStatus }}"
+          {{- end }}
           env:
           {{- if .Values.config.authtokenSecret }}
           - name: PAGERDUTY_AUTH_TOKEN
