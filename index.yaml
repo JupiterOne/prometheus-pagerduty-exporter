@@ -3,6 +3,23 @@ entries:
   prometheus-pagerduty-exporter:
   - apiVersion: v2
     appVersion: 20.11.1
+    created: "2023-02-20T17:46:44.977369435Z"
+    description: PagerDuty exporter for prometheus
+    digest: 7cc0db24c5d74cb09580670df224fe61483bbfcabb19b80dbc5635380252769d
+    home: https://github.com/jupiterone/pagerduty-exporter/
+    keywords:
+    - pagerduty
+    - prometheus
+    - exporter
+    name: prometheus-pagerduty-exporter
+    sources:
+    - https://github.com/jupiterone/pagerduty-exporter/
+    type: application
+    urls:
+    - https://github.com/JupiterOne/prometheus-pagerduty-exporter/releases/download/prometheus-pagerduty-exporter-0.1.4/prometheus-pagerduty-exporter-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 20.11.1
     created: "2023-02-20T17:42:55.150807011Z"
     description: PagerDuty exporter for prometheus
     digest: 8556f09a26feeaf54cd27b6336947b243068aa45d6e4e48828f4e07c1e4f439b
@@ -18,4 +35,4 @@ entries:
     urls:
     - https://github.com/JupiterOne/prometheus-pagerduty-exporter/releases/download/prometheus-pagerduty-exporter-0.1.3/prometheus-pagerduty-exporter-0.1.3.tgz
     version: 0.1.3
-generated: "2023-02-20T17:42:55.150813011Z"
+generated: "2023-02-20T17:46:44.977376236Z"
