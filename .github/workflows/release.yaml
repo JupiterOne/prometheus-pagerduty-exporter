@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # important parameter
 
       - name: Fetch history
         run: git fetch --prune --unshallow
@@ -33,5 +35,3 @@ jobs:
         uses: helm/chart-releaser-action@v1.5.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        with:
-          fetch-depth: 0 # important parameter
