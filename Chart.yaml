@@ -2,7 +2,7 @@ apiVersion: v2
 name: prometheus-pagerduty-exporter
 description: PagerDuty exporter for prometheus
 type: application
-version: 0.1.4
+version: 0.1.3
 appVersion: "20.11.1"
 home: https://github.com/jupiterone/pagerduty-exporter/
 sources:
